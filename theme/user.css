@@ -120,3 +120,10 @@
 .marketplace-card__tag:not([data-tag="external JS"]) {
   color: var(--on-accent) !important;
 }
+
+:root,
+.Root__main-view,
+.Root__main-view * {
+  --carousel-start-chevron-gradient: rgba(var(--spice-rgb-main), 0.7) !important;
+  --carousel-end-chevron-gradient: rgba(var(--spice-rgb-main), 0.7) !important;
+}
