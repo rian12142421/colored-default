@@ -1,6 +1,8 @@
 :root {
   --on-accent: var(--spice-main);
   --background-noise: none !important;
+  --spice-shadow: var(--spice-main) !important;
+  --spice-rgb-shadow: var(--spice-rgb-main) !important;
 }
 
 :root,
@@ -65,4 +67,24 @@
 .main-yourLibraryX-libraryContainer,
 .main-entityHeader-container {
   box-shadow: none !important;
+}
+
+.progress-bar,
+.progress-bar:hover,
+.progress-bar:focus-within,
+.progress-bar--isDragging {
+  --fg-color: var(--spice-button) !important;
+}
+
+[data-testid="control-button-playpause"] {
+  background-color: var(--spice-button) !important;
+  color: var(--on-accent) !important;
+}
+
+[data-testid="control-button-playpause"]:hover {
+  background-color: var(--spice-button-active) !important;
+}
+
+[data-testid="control-button-playpause"] svg {
+  fill: var(--on-accent) !important;
 }
