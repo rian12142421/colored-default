@@ -1,10 +1,10 @@
 {
   "name": "Colorful Default",
   "description": "A simple colorful theme for those who love simplicity.",
-  "preview": "cover.png",
+  "preview": "theme/iris.png",
   "readme": "README.md",
-  "usercss": "./user.css",
-  "schemes": "./color.ini",
+  "usercss": "theme/user.css",
+  "schemes": "theme/color.ini",
   "authors": [
     {
       "name": "meph1sto",
