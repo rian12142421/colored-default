@@ -127,3 +127,35 @@
   --carousel-start-chevron-gradient: rgba(var(--spice-rgb-main), 0.7) !important;
   --carousel-end-chevron-gradient: rgba(var(--spice-rgb-main), 0.7) !important;
 }
+
+.main-yourLibraryX-libraryContainer > div:first-child {
+  box-shadow: 0 6px 10px 0 rgba(var(--spice-rgb-sidebar), 0.6) !important;
+}
+
+.main-yourLibraryX-libraryContainer .x-entityImage-imageContainer {
+  box-shadow: none !important;
+}
+
+.x-entityImage-imageContainer {
+  box-shadow: 0 4px 60px 0 rgba(var(--spice-rgb-shadow), 0.5) !important;
+}
+
+.view-homeShortcutsGrid-imageWrapper {
+  box-shadow: 0 8px 24px 0 rgba(var(--spice-rgb-shadow), 0.5) !important;
+}
+
+[class*="PromotionDefaultNativeImage-module_image-container"] {
+  box-shadow: 0 4px 60px 0 rgba(var(--spice-rgb-shadow), 0.4) !important;
+}
+
+.cover-art {
+  box-shadow: 0 0 10px 0 rgba(var(--spice-rgb-shadow), 0.3) !important;
+}
+
+.progress-bar__slider {
+  box-shadow: 0 2px 4px 0 rgba(var(--spice-rgb-shadow), 0.5) !important;
+}
+
+[class*="e-10810-button-primary__inner"] {
+  box-shadow: 0 8px 8px 0 rgba(var(--spice-rgb-shadow), 0.3) !important;
+}
