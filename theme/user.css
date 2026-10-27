@@ -77,9 +77,11 @@
   --progress-bar-active-color: var(--spice-button) !important;
 }
 
-.x-progressBar-fillColor,
+.progress-bar .x-progressBar-fillColor,
 .progress-bar:hover .x-progressBar-fillColor,
-.progress-bar--isDragging .x-progressBar-fillColor {
+.progress-bar--isDragging .x-progressBar-fillColor,
+.playback-progressbar .x-progressBar-fillColor,
+.volume-bar .x-progressBar-fillColor {
   background-color: var(--spice-button) !important;
 }
 
@@ -113,4 +115,8 @@
 
 .marketplace-card .main-cardSubHeader-root {
   color: var(--spice-subtext) !important;
+}
+
+.marketplace-card__tag:not([data-tag="external JS"]) {
+  color: var(--on-accent) !important;
 }
