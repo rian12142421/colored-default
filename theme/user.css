@@ -74,6 +74,17 @@
 .progress-bar:focus-within,
 .progress-bar--isDragging {
   --fg-color: var(--spice-button) !important;
+  --progress-bar-active-color: var(--spice-button) !important;
+}
+
+.x-progressBar-fillColor,
+.progress-bar:hover .x-progressBar-fillColor,
+.progress-bar--isDragging .x-progressBar-fillColor {
+  background-color: var(--spice-button) !important;
+}
+
+.progress-bar__slider {
+  background-color: var(--spice-button) !important;
 }
 
 [data-testid="control-button-playpause"] {
@@ -87,4 +98,19 @@
 
 [data-testid="control-button-playpause"] svg {
   fill: var(--on-accent) !important;
+}
+
+.marketplace-card {
+  background-color: var(--spice-card) !important;
+  border: 2px solid var(--spice-text) !important;
+  box-shadow: none !important;
+  color: var(--spice-text) !important;
+}
+
+.marketplace-card .main-cardHeader-text {
+  color: var(--spice-text) !important;
+}
+
+.marketplace-card .main-cardSubHeader-root {
+  color: var(--spice-subtext) !important;
 }
