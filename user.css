@@ -1,3 +1,15 @@
+:root {
+  --on-accent: var(--spice-main);
+  --background-noise: none !important;
+}
+
+:root,
+.encore-dark-theme,
+.encore-base-set,
+.encore-inverted-light-set {
+  --background-highlight: rgba(var(--spice-rgb-highlight), 0.25) !important;
+}
+
 .encore-dark-theme .encore-bright-accent-set,
 .encore-dark-theme .encore-positive-set {
   --background-highlight: var(--spice-highlight) !important;
@@ -5,54 +17,52 @@
   --background-elevated-base: var(--spice-main-elevated) !important;
   --background-elevated-highlight: var(--spice-highlight-elevated) !important;
   --background-elevated-press: var(--spice-highlight-elevated) !important;
-  --encore-icon-fill: #fff !important;
+  --encore-icon-fill: var(--on-accent) !important;
+}
+
+.x-searchInput-searchInputInput {
+  color: var(--spice-text) !important;
 }
 
 .x-searchInput-searchInputInput::placeholder {
-  color: #fff !important;
+  color: var(--spice-subtext) !important;
 }
 
 .x-searchInput-searchInputInput:hover {
   background: var(--spice-main-elevated) !important;
 }
 
-.main-home-homeHeader,
-.main-home-filterChipsSection.fzMaM8folMIckYG2::after {
-  background: none !important;
-  background-image:
-    linear-gradient(
-      rgba(var(--spice-rgb-shadow), 0.6) 0,
-      var(--spice-main) 100%
-    ),
-    var(--background-noise) !important;
-}
-
 .main-entityHeader-backgroundColor,
 .main-entityHeader-overlay,
+.main-actionBarBackground-background,
+.main-topBar-background,
 .main-topBar-overlay,
-.desktopmodals-aboutSpotifyModal-container,
-.lyrics-lyricsContainer-LyricsBackground {
-  background-image:
-    linear-gradient(
-      rgba(var(--spice-rgb-shadow), 0.6) 0,
-      var(--spice-main) 100%
-    ),
-    var(--background-noise) !important;
+.main-home-homeHeader,
+[class*="main-home-filterChipsSection"]::after,
+.lyrics-lyricsContainer-LyricsBackground,
+.desktopmodals-aboutSpotifyModal-container {
+  background: var(--spice-main) !important;
+  background-image: none !important;
+}
+
+.desktopmodals-aboutSpotifyModal-licensing {
+  background: none !important;
 }
 
 .tippy-box {
   background: var(--spice-highlight) !important;
+  color: var(--on-accent) !important;
 }
 
 .tippy-arrow {
   color: var(--spice-highlight) !important;
 }
 
-.main-actionBarBackground-background {
-  background-image: none !important;
-  background: none !important;
-}
-
-.desktopmodals-aboutSpotifyModal-licensing {
-  background: none !important;
+.Root__main-view,
+.Root__nav-bar,
+.Root__now-playing-bar,
+.main-nowPlayingBar-container,
+.main-yourLibraryX-libraryContainer,
+.main-entityHeader-container {
+  box-shadow: none !important;
 }
